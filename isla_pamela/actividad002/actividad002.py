@@ -3,7 +3,6 @@
     expresada en hh,mm,ss.
 
     Realizar una función que reciba como parámetros cantidades de horas, minutos y/o segundos. Y que retorne la suma de estos expresanda en segundos. (Los parámetros, son opcionales y por defecto sus valores 0.)
-
     En otro archivo, importar las funciones creadas.
     Realizar un programa que:
         
@@ -24,13 +23,18 @@
 _______________"""
 print("")
 print("*****RELOJ*****")
-print("")
-def reloj(segundo):
-    horas=segundo//3600
-    minutos=segundo%3600//60
-    segundos=segundo%3600%60
+
+def reloj(segundos):
+    horas = segundos // 3600
+    minutos = segundos %3600 // 60
+    segundos = segundos % 3600 % 60
     return horas,minutos,segundos
-print("")
-def relojero(horas,minutos,segundos):
-    segundos=horas*3600+minutos*60+segundos
-    return segundos
+
+    print("")
+
+def relojero(horas=0,minutos=0,segundos=0):
+    segundos = horas*3600+minutos*60+segundos
+    return (segundos)
+    print("")
+
+
