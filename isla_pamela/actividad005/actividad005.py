@@ -6,62 +6,23 @@ a y b (incluyendo a y b si son primos).
 
 #numeros primos son divisibles por 1 y por si mismo
 
-def generar_primos(a=0,b=100):
-	nupri=2
-	for num in range(2,b+1):
-		for nupri in nupri:
-			if num %i==0:
-				break
-		else:
-			nupri.append(num)
+#Numeros Primos
+
+#rango de 0 a 100
+
+def numero_primo(a=0, b=100):
+	x=1
+	while x<=b:
+		contador =1
+		a=0
+		while contador <=x:
+			if x % contador ==0:
+				a=a+1
+			contador =contador +1
+		if a ==2:
+			print(x)
+		x= x+1
+		
+print(numero_primo())
 
 
-
-
-"""
-
-
-	while True:
-		verifico=b+1
-
-		contador+1
-
-		divisores=0
-
-		while contador <= verifico:
-			if verifico%divisores ==0:
-				divisores+=1
-			if divisores>2:
-				break
-
-			contador +=1
-		if divisores ==2:
-			return verifico
-			numero=verifico
-
-generador=generar_primos()
-primos=(next.generador()for a in and range )
-
-
-
-def primo(a=0,b=100):
-	numeros=[2,3,5,7]
-	for x in range (a,b):
-
-	if num<1:
-		return False
-	elif num==2:
-		return True
-	else:
-		for i  in range(2,num):
-			if num %i==0:
-				return False
-		return True
-		resultado=primo(num)
-			return primo
-
-
-datos= 23,45
-print(primo(datos))
-
-"""
